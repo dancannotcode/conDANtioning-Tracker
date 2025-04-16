@@ -1,0 +1,77 @@
+@import url();
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-shadow: border-box;
+    font-family: "Helvetica", sans-serif;
+}
+body{
+    display: flex;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left:0;
+    bottom: 0;
+    width: 100px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    transition: all 0.1s linear;
+    background: hsl(94, 100%, 11%);
+}
+.sidebar:hover{
+    width: 240px;
+    transition: .5s;
+}
+.tabs{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.tabs li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.tabs li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.tabs li:hover,
+.active{
+    background: hsl(32, 100%, 10%);
+}
+
+.tabs a{
+    color: hsl(94, 100%, 54%);
+    font-size: 14px; 
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+.tabs a
+.active{
+    color: hsl(0, 0%, 100%);
+}
+.tabs a span{
+    overflow: hidden;
+}
+.logout{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
