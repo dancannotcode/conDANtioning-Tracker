@@ -169,7 +169,7 @@ hr {
     justify-content: space-between;
     transition: all 0.5s ease-in-out;
 } 
-.date{
+.dailyDiary{
     color: black;
     padding: 2rem;  
     position: absolute;  
