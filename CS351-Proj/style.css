@@ -6,7 +6,7 @@
     border: none;
     outline: none;
     box-shadow: border-box;
-    font-family: "Helvetica", sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 body{
     display: flex;
@@ -90,7 +90,7 @@ hr {
 
 .mainContent{
     position: relative;
-    background: "white";
+    background: white;
     width: 100%;
     padding: 1rem;
 }
@@ -143,10 +143,12 @@ hr {
 
  
 .cardContainer{
-    background: hsl(94, 89%, 40%);
+    background: hsl(94, 89%, 40%);  
     padding: 2rem;
-    border-radius: 10px; 
-    position: absolute;
+    border-radius: 10px;
+    flex-wrap: wrap;  
+    gap: 1rem; 
+    width: fit-content;  
 }
 .cardWrapper{
     display: flex;
@@ -154,7 +156,7 @@ hr {
     gap: 1rem;
 }
 .mainTitle{
-    color: hsl(0, 0%, 100%);
+    color:hsl(94, 100%, 11%);
     padding-bottom: 10px;
     font-size: 15px;
 }
@@ -172,8 +174,116 @@ hr {
 .dailyDiary{
     color: black;
     padding: 2rem;  
-    position: absolute;  
+    position: relative;  
     width:100%;
     display: block;
-    place-items: center;
+    place-items: center;  
+}
+.calendar{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 80%;
+    
+}
+.calendar
+#backButton{
+    background-color: hsl(94, 89%, 40%);
+    border-radius: 20%;
+    padding: 1rem;
+    cursor:pointer;
+    
+}
+.calendar
+#backButton:hover{
+    border-radius: 20%;
+    padding: 1rem;
+    background-color: hsl(0, 4%, 32%);
+    
+}
+.calendar
+#date{
+    font-size: 100px;
+    padding-left: 1rem;
+    padding-right: 1rem; 
+}
+.calendar
+#date:hover{
+    font-size: 100px;
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    cursor: pointer; 
+    background-color: hsla(0, 4%, 32%, 0.346);
+    border-radius: 15px;
+
+}
+.calendar
+#forwardButton{
+    background-color: hsl(94, 89%, 40%);
+    border-radius: 20%;
+    padding: 1rem;
+    cursor:pointer;
+    
+}
+.calendar
+#forwardButton:hover{
+    border-radius: 20%;
+    padding: 1rem;
+    background-color: hsl(0, 4%, 32%);
+    
+}
+.exerciseCard{
+    background-color: hsl(94, 89%, 40%);
+    position: relative; 
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+}
+.exerciseCard
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.exercise{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.exerciseInfo
+span{
+    color:hsl(94, 100%, 11%);
+}
+.weightCard{
+    position: relative;
+    background-color: hsl(94, 89%, 40%);
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
+    width: fit-content; 
+    place-self: center;
+}
+.weight{
+    padding: 1rem;
+}
+.weight
+h2{
+    width: fit-content; 
+    display: inline-flex;
+    font-size: 40px;
+} 
+.progress{ 
+    justify-self: center;
+    font-size: 24px;
+}
+.weightUpdate{
+    justify-items: center;
+    font-size: 30px;
+    color: hsl(0, 0%, 0%);
+}
+.weightUpdate:hover{
+    cursor: pointer;
+    color:hsl(94, 98%, 19%)
 }

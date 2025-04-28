@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+html{
+    display: flex;
+    font-family: Helvetica, sans-serif;
+}
+.sideProfile{
+    background-color:aqua;
+    position: sticky;
+    top: 0;
+    left:0;
+    bottom: 0;
+    width: 500px;
+    height:100vh;
+    padding: 0 1.7rem;
+}
+.loginUser{ 
+    height: 88%;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: blue;
+    
+}
