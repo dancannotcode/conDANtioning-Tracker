@@ -1,25 +1,48 @@
 *{
     margin: 0;
     padding: 0; 
-}
-html{
-    display: flex;
+    border: none;
+    outline: none;
+    box-shadow: border-box;
     font-family: Helvetica, sans-serif;
 }
+body{
+    display: flex;  
+}
 .sideProfile{
-    background-color:aqua;
-    position: sticky;
+    background-color:white; 
+    position: static;
     top: 0;
     left:0;
     bottom: 0;
     width: 500px;
-    height:100vh;
+    height: 100vh;
     padding: 0 1.7rem;
 }
 .loginUser{ 
-    height: 88%;
+    margin-top: 7rem;
+    position: block;
     padding: 1rem;
-    margin-top: 1rem;
     background-color: blue;
     
 }
+.loginInfo{
+    
+    width: 100px;
+    height: 250px;
+    background-color: hsl(0, 50%, 34%);
+}
+.loginField{
+    padding-bottom: 4rem;
+    padding-left: 50%;
+}
+.mainPicture{  
+    position: relative; 
+    width: 100%; 
+}
+.mainPicture
+img{  
+    height: 100%;
+    width: 100%;
+}
+   
