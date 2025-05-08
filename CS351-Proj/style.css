@@ -21,6 +21,11 @@ hr {
     border-style: inset;
     border-width: 1px;
   }
+  input[type="date"]::-webkit-clear-button {
+    display: none;
+    -webkit-appearance: none;
+
+  }  
 .sidebar{
     position: sticky;
     top: 0;
@@ -120,6 +125,7 @@ hr {
     gap: 1;
 }
 .searchBox{
+    visibility: hidden;
     background: hsl(0, 0%, 100%);
     border-radius: 15px;
     color:hsl(0, 0%, 0%);
@@ -204,13 +210,13 @@ hr {
 }
 .calendar
 #date{
-    font-size: 100px;
+    font-size: 50px;
     padding-left: 1rem;
     padding-right: 1rem; 
 }
 .calendar
 #date:hover{
-    font-size: 100px;
+    font-size: 50px;
     padding-left: 1rem;
     padding-right: 1rem; 
     cursor: pointer; 
@@ -255,7 +261,18 @@ img{
 .exerciseInfo
 span{
     color:hsl(94, 100%, 11%);
+} 
+  
+.hidden {
+    display: none !important;
 }
+#exerciseForm {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .weightCard{
     position: relative;
     background-color: hsl(94, 89%, 40%);
@@ -286,4 +303,14 @@ h2{
 .weightUpdate:hover{
     cursor: pointer;
     color:hsl(94, 98%, 19%)
+}
+.userImg
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.userImg
+img:hover{
+    cursor: pointer;
 }
