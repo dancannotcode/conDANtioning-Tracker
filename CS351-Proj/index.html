@@ -20,12 +20,13 @@
                     <span>profile</span>
                 </a>
             </li>
+             <!-- didn't have time to add these
             <li>
                 <a href="progress.html">
                     <span >progress</span>
                 </a>
             </li>
-            <!-- didn't have time to add these
+           
             <li>
                 <a href="#">
                     <span>settings</span>
@@ -56,7 +57,10 @@
                 <input type = "text"
                 placeholder="Search"/>
                 </div>
-                <img src="pictures/defaultPFP.jpg" alt ="default green pfp" />
+                
+                <a href="profile.html">
+                     <img src="pictures/defaultPFP.jpg" alt ="default green pfp" />
+                </a>
             </div>
         </div>  
             <div class="cardContainer">
@@ -69,29 +73,30 @@
                         <div class="cardHeader">
                             <div class="dataPoints">
                                 <span class = "title">
-                                    Payment amount
-                                </span>
-                                <span class= "amount-value"> $500.00
-                                </span>
+                                    <big>
+                                        Goal Progress
+                                    </big>
+                                </span> 
                             </div>
                         </div>
                         <span class="cardDetail">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis veniam ut culpa ratione maxime assumenda incidunt natus, ipsam dolorum quaerat, fuga ea est porro asperiores adipisci vitae sint quo?
+                            <canvas id="weightChart"></canvas>
                         </span>
+                        
                     </div>
     
                     <div class = "pinnedCard">
                         <div class="cardHeader">
                             <div class="dataPoints">
                                 <span class = "title">
-                                    Payment amount
-                                </span>
-                                <span class= "amount-value"> $500.00
-                                </span>
+                                    <big>
+                                        BMI
+                                    </big>
+                                </span> 
                             </div>
                         </div>
-                        <span class="cardDetail">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus omnis veniam ut culpa ratione maxime assumenda incidunt natus, ipsam dolorum quaerat, fuga ea est porro asperiores adipisci vitae sint quo?
+                        <span class="cardDetail2">
+                            --.-
                         </span>
                     </div>
                 </div>
@@ -116,8 +121,8 @@
                         Exercise
                     </h3>
                     <span>
-                    <p>Daily Goal: </p>
-                    <p>--</p>
+                    <p>Daily Avg: </p>
+                    <p id = "timeAvg">--</p>
                     </span>
                 </div>
                 <div class = "userAddExercise">
@@ -131,9 +136,11 @@
                 <label for="duration">Duration (mins):</label>
                 <input type="number" id="duration" name="duration" required />
         
-                <button type="submit">Add Exercise</button>
+                <button type="submit" class = "addExerciseButton">Add Exercise</button>
+                <hr>
             </form>
         </div>
+
         <div class = "weightCard">
             <h2>
                 Goal
@@ -153,7 +160,7 @@
             <div>
                 <div class = "progress">
                     <p id = "usersProgress">
-                        up/down somerandom percentage
+
                     </p> 
                 </div>
             </div> 
@@ -165,7 +172,8 @@
             </div>
         </div>
     </div>
-    <script src = "main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src = "index.js"></script>
 </body>
 
 </html>

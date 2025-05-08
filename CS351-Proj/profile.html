@@ -1,83 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>  
-        <title>
-            conDANtioning Tracker
-        </title>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    <body>
-        <div class = "sidebar">
-            <ul class = "tabs">
-                <li >
-                    <a href="index.html">
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li class = "active">
-                    <a href="#">
-                        <span>profile</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="progress.html">
-                        <span >progress</span>
-                    </a>
-                </li>
-                <!-- didn't have time to add these
-                <li>
-                    <a href="#">
-                        <span>settings</span>
-                    </a>
-                </li>
-                <li class ="logout" >
-                    <a href="#">
-                        <span>logout</span>
-                    </a>
-                </li>
-                -->
-            </ul>
+<head>  
+    <title>conDANtioning Tracker</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<div class="sidebar">
+    <ul class="tabs">
+        <li><a href="index.html"><span>Dashboard</span></a></li>
+        <li class="active"><a href="#"><span>Profile</span></a></li>
+         <!-- didn't have time to add these
+        <li><a href="progress.html"><span>Progress</span></a></li>
+        -->
+    </ul>
+</div> 
+
+<body class = "profileBody">
+    
+
+    <div class="userInfo">
+        <div class="loginField">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
         </div>
-        <div class = "userImg">
-            <img src="pictures/defaultPFP.jpg" alt ="default green pfp" />
-            <p>upload image</p>
+
+        <div class="loginField">
+            <label for="weight">Weight:</label><br>
+            <input type="number" id="weight" required>
+            <select id="weightUnit">
+                <option value="lbs">lbs</option>
+                <option value="kg">kg</option>
+            </select>
         </div>
-        <div class = "userInfo">
-            <form class = "loginField">
-                <label for="username"> Username:</label>
-                <input type = "text" id="username" required>
-            </form>
-            <form class = "loginField">
-                <label for="weight"> Weight:</label><br>
-                <input type = "number" id="weight" required>
-                <select id="weightMeasurement" name = "weightMeasurement">
-                    <option value = "lbs"> lbs</option>
-                    <option value = "kg"> kg</option>
-                </select>
-            </form>
-            <form class = "loginField">
-                <label for="height"> Height:</label><br>
-                <input type = "number" id="height" required>
-                <select id="heightMeasurement1" name = "heightMeasurement1">
-                    <option value = "ft"> ft</option>
-                    <option value = "m"> m</option>
-                </select>
-                <input type = "number" id="height" required>
-                <select id="heightMeasurement2" name = "heightMeasurement2">
-                    <option value = "in"> in</option>
-                    <option value = "cm"> cm</option>
-                </select>
-            </form>
-            <form class = "loginField">
-                <label for="goal"> Goal Weight:</label><br>
-                <input type = "number" id="goal" required>
-                <select id="weightMeasurement" name = "weightMeasurement">
-                    <option value = "lbs"> lbs</option>
-                    <option value = "kg"> kg</option>
-                </select>
-            </form>
+
+        <div class="loginField">
+            <label for="height">Height:</label><br>
+            <input type="number" id="height1" required>
+            <select id="heightUnit1">
+                <option value="ft">ft</option>
+                <option value="m">m</option>
+            </select>
+            <input type="number" id="height2" required>
+            <select id="heightUnit2">
+                <option value="in">in</option>
+                <option value="cm">cm</option>
+            </select>
         </div>
-        <br>
-        <button class = "saveButton"> Save Info</button>
-    </body>
+
+        <div class="loginField">
+            <label for="goal">Goal Weight:</label><br>
+            <input type="number" id="goal" required>
+            <select id="goalUnit">
+                <option value="lbs">lbs</option>
+                <option value="kg">kg</option>
+            </select>
+        </div>
+        <button type="button" class="saveButton">Save Info</button>
+    </div>
+
+    <br>
+
+    <script src="index.js"></script>
+</body>
 </html>
