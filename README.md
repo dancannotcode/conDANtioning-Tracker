@@ -193,6 +193,7 @@ function renderWeightChart() {
 * Add more tabs (settings, about page, etc.)
 * add more data sets (top exercises, food tracking, etc)
 * Improve visuals
+* cloud service instead of local storage
 
 ## Status
 * _Completed_: No further updates planned, but open to feedback and collaboration.
