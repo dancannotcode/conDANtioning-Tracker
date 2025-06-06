@@ -184,7 +184,10 @@ function renderWeightChart() {
 ## Features
 * localStorage 
 * easy to use 
-* 
+* BMI calculation
+* Weight Chart
+* Daily log
+* Navigation
 
 ### Future Enhancements
 * Add more tabs (settings, about page, etc.)
@@ -207,7 +210,7 @@ function renderWeightChart() {
 
 ## Contributors
 List all contributors involved in the project:
-* [Daniel Ortega Jr](https://github.com/dancannotcode) - Responsible for getting various bits of data to save to the firebase as well as make the enemies spawn on the clicking tab.  
+* [Daniel Ortega Jr](https://github.com/dancannotcode) - Responsible for the CSS styling as well as the backend data handling for the users entries and weight history.
 
 ## Contact
 Feel free to reach out for collaboration, feedback, or questions.  
